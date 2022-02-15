@@ -116,51 +116,6 @@ li a {
 }
 
 /*---------- ボタン ---------- */
-.btn06{
-  position: relative;
-  text-decoration: none;
-	display: inline-block;
-	background:#009fe8;
-	color:#fff;
-  padding: 10px 40px 10px 30px;
-	border-radius:25px;
-  text-align: center;
-  outline: none;
-  transition: ease .2s;
-  font-size: 1.7vw;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.btn06:hover{
-  background:#4ab8f7;
-}
-
-.btnarrow2::after{
-  content: '';
-  position: absolute;
-  top:42%;
-  right: 13px;
-  width: 5px;
-  height: 5px;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(45deg);
-}
-
-.btnarrow2:hover::after{
-  animation: arrow .5s;
-}
-
-@keyframes arrow {
-  50% {
-    right: 10px;
-  }
-  100% {
-    right: 13px;
-  }
-}
-
 .btn{
   position: relative;
 	overflow: hidden;
@@ -201,8 +156,6 @@ li a {
   height: 100%;	
   background-color: #00a7eb;
 }
-
-
 
 /*---------- ボックス ---------- */
 .box6 {
