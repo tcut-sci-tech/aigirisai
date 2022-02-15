@@ -172,6 +172,7 @@ li a {
   outline: none;
   transition: ease .2s;
   width: 90%;
+  height: auto;	
 }
 
 .btn span {
