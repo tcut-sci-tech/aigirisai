@@ -123,6 +123,7 @@ li a {
 	display: inline-block;
   border: 1px solid #000000;
   padding: 1vw 1vw 1vw 1vw;
+  margin: 0.25vw 0vw 0.25vw 0vw;
   text-align: center;
   outline: none;
   transition: ease .2s;
