@@ -218,7 +218,7 @@ txt1 {
 	display: block;
 	text-decoration: none;
 	color: #ffffff;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 700;
 	padding:1vw;
 }
@@ -250,7 +250,7 @@ txt1 {
 
 #header.dnone.panelactive #g-navi li a{
 	color: #333;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 700;
 	text-decoration: none;
 	padding:1vw;
