@@ -189,7 +189,7 @@ txt1 {
 }
 
 #header{
-  height: 4vw;
+  height: 4.5vw;
 	width:100%;
 	display: flex;
 	justify-content: space-between;
@@ -240,7 +240,7 @@ txt1 {
 
 #header.dnone.panelactive #g-navi{
   opacity: 1;
-	z-index:3;
+	z-index:100;
 	background:#eee;
 }
 
@@ -250,7 +250,7 @@ txt1 {
 
 #header.dnone.panelactive #g-navi li a{
 	color: #333;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 700;
 	text-decoration: none;
 	padding:1vw;
