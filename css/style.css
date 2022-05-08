@@ -190,7 +190,7 @@ txt1 {
 
 #header{
   height: 4.5vw;
-	width:100%;
+	width:max;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
