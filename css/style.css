@@ -125,14 +125,6 @@ txt2 {
 }
 
 /*---------- ヘッダー ---------- */
-#header{
-	width:100%;
-	background:#fff;
-	color:#000;
-	text-align: center;
-	padding: 20px;
-}
-
 #g-nav{
   position:fixed;
   z-index: 999;
