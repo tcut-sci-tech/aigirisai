@@ -126,7 +126,7 @@ ul.ddmenu {
 }
 
 ul.ddmenu li {
-  width: 275px;
+  width: 250px;
   display: inline-block;
   list-style-type: none;
   position: relative;
@@ -161,7 +161,7 @@ ul.ddmenu ul {
 }
 
 ul.ddmenu ul li {
-  width: 275px;
+  width: 250px;
   border-top: 1px solid white;
 }
 
