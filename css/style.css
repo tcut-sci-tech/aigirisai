@@ -31,7 +31,7 @@ h3 {
   font-size: 1.5vw;
   text-align: center;
   font-weight: 800;
-  color: #ffffff;
+  color: #fff;
 }
 
 h4 {
@@ -90,7 +90,7 @@ a {
   position: relative;
   font-size: 1.7vw;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -99,7 +99,7 @@ ul {
   position: relative;
   font-size: 2vw;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
 txt1 {
@@ -107,7 +107,7 @@ txt1 {
   position: relative;
   font-size: 2vw;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
 txt2 {
@@ -115,7 +115,15 @@ txt2 {
   position: relative;
   font-size: 2.3vw;
   font-weight: 700;
-  color: #000000;
+  color: #fff;
+}
+
+txt3{
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2.3vw;
+  font-weight: 700;
+  color: #000;
 }
 
 /*---------- メニューバー ---------- */
