@@ -113,17 +113,9 @@ txt1 {
 txt2 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 2.3vw;
+  font-size: 2.5vw;
   font-weight: 700;
   color: #fff;
-}
-
-txt3{
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2.3vw;
-  font-weight: 700;
-  color: #000;
 }
 
 /*---------- メニューバー ---------- */
@@ -194,14 +186,72 @@ ul.ddmenu ul ul {
   border-left: 1px solid white;
 }
 
+/*---------- ボタン ---------- */
+.btnarrow6{
+  position: relative;
+  background:#00a7eb;
+  padding: 5px 60px 5px 30px;
+  display: inline-block;
+  text-align: center;
+  transition: all .2s linear;
+	color:#fff;
+  text-decoration: none;
+	border:transparent 2px solid;
+  outline: none;
+}
+
+.btnarrow6:hover{
+  background:#fff;
+	color:#333;
+	border-color:#333;
+}
+
+.btnarrow6:before{
+  content:"";
+  position: absolute;
+	top:50%;
+	right:20px;
+  width:20px;
+	height:1px;
+	background:#fff;
+}
+
+.btnarrow6::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: 12px;
+  border: 4px solid transparent;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  border-left-color: #fff;
+  transition: all .2s linear;
+}
+
+.btnarrow6:hover::before{
+	background:#333;
+	right:25px;
+}
+
+.btnarrow6:hover::after{
+  border-left-color: #333; 
+  right: 20px;
+}
+
 /*---------- セクション ---------- */
-.sec02 {
+.sec03 {
   margin: 0 0 0 0;
 	height: auto;
 	background-color: #dcdcdc;
 }
 
-.sec04 {
+.sec05 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #dcdcdc;
+}
+
+.sec06 {
   margin: 0 0 0 0;
 	height: auto;
 	background-color: #2857b1;
