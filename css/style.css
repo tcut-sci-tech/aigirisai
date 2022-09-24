@@ -3,7 +3,7 @@
 /*---------- 文字 ---------- */
 body {
   font-family: 'M PLUS 1p', 'Montserrat', sans-serif;
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 
@@ -13,7 +13,7 @@ h1 {
   font-size: 6vw;
   text-align: center;
   font-weight: 800;
-  color: #2857b1;
+  color: #036eb7;
 }
 
 h2 {
@@ -22,65 +22,60 @@ h2 {
   font-size: 5.5vw;
   text-align: left;
   font-weight: 800;
-  color: #2857b1;
+  color: #036eb7;
 }
 
 h3 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 1.5vw;
-  text-align: center;
-  font-weight: 800;
-  color: #fff;
-}
-
-h4 {
-  margin: 0 0 0 0;
-  position: relative;
   font-size: 4vw;
   text-align: center;
   font-weight: 800;
-  color: #2857b1;
+  color: #036eb7;
 }
 
-BL {
+bla {
+  color: #000;
+}
+
+blu {
+  color: #00f;
+}
+
+red {
+  color: #f00;
+}
+
+ul {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 4vw;
+  font-size: 2vw;
+  font-weight: 500;
+  color: #000;
+}
+
+ol {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2vw;
+  font-weight: 500;
+  color: #000;
+}
+
+th {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2vw;
   text-align: center;
   font-weight: 800;
   color: #000;
 }
 
-SAT {
+td {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 4vw;
-  text-align: center;
-  font-weight: 800;
-  color: #0000ff;
-}
-
-SUN {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 4vw;
-  text-align: center;
-  font-weight: 800;
-  color: #ff0000;
-}
-
-h5 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 3.5vw;
-  text-align: left;
-  font-weight: 800;
-  color: #00a7eb;
-}
-
-ku {
   font-size: 2vw;
+  text-align: center;
   font-weight: 500;
   color: #000;
 }
@@ -94,14 +89,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2vw;
-  font-weight: 500;
-  color: #000;
-}
-
 txt1 {
   margin: 0 0 0 0;
   position: relative;
@@ -110,148 +97,171 @@ txt1 {
   color: #000;
 }
 
-txt2 {
+tit1 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2.3vw;
+  font-weight: 800;
+  color: #fff;
+}
+
+tit1:hover{
+  opacity: 0.5;
+}
+
+tit2 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 1.7vw;
+  font-weight: 800;
+  color: #fff;
+}
+
+tit2:hover{
+  opacity: 0.5;
+}
+
+tit3 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 1.5vw;
+  font-weight: 800;
+  color: #fff;
+}
+
+tit4 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 3.5vw;
+  font-weight: 800;
+  color: #00a7ea;
+}
+
+tit5 {
   margin: 0 0 0 0;
   position: relative;
   font-size: 2.5vw;
-  font-weight: 700;
-  color: #fff;
-}
-
-/*---------- メニューバー ---------- */
-ul.ddmenu {
-  margin: 0px;
-  padding: 0px 0px 0px 15px;
-  background-color: #2857b1;
-}
-
-ul.ddmenu li {
-  width: 225px;
-  display: inline-block;
-  list-style-type: none;
-  position: relative;
-}
-
-ul.ddmenu a {
-  background-color: #2857b1;
-  color: #fff;
-  font-size: 2.3vw;
-  line-height: 55px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-}
-
-ul.ddmenu a:hover {
-   background-color: #00a7eb;
-}
-
-ul.ddmenu li:hover > ul {
-  display: block;
-}
-
-ul.ddmenu ul {
-  background-color: #2857b1;
-  margin: 0px;
-  padding: 0px;
-  display: none;
-  position: absolute;
-  z-index: 999;
-}
-
-ul.ddmenu ul li {
-  width: 225px;
-  border-top: 1px solid white;
-}
-
-ul.ddmenu ul li a {
-  line-height: 55px;
-  text-align: left;
-  padding-left: 5px;
-  font-weight: normal;
-}
-
-ul.ddmenu ul li a:hover {
-  background-color: #00a7eb;
-}
-
-ul.ddmenu ul ul {
-  margin: 0px;
-  padding: 0px;
-  display: none;
-  position: absolute;
-  top: -1px;
-  left: 100%;
-  border-left: 1px solid white;
+  font-weight: 800;
+  color: #000;
 }
 
 /*---------- ボタン ---------- */
-.btnarrow6{
+.btn06{
   position: relative;
-  background:#00a7eb;
-  padding: 5px 60px 5px 30px;
-  display: inline-block;
-  text-align: center;
-  transition: all .2s linear;
-	color:#fff;
   text-decoration: none;
-	border:transparent 2px solid;
+	display: inline-block;
+	background:#00a7ea;
+	color:#fff;
+  padding: 10px 40px 10px 30px;
+	border-radius:25px;
+  text-align: center;
   outline: none;
+  transition: ease .2s;
+  font-size: 2.3vw;
+  font-weight: 600;
+  color: #fff;
 }
 
-.btnarrow6:hover{
-  background:#fff;
-	color:#333;
-	border-color:#333;
-}
-
-.btnarrow6:before{
-  content:"";
-  position: absolute;
-	top:50%;
-	right:20px;
-  width:20px;
-	height:1px;
-	background:#fff;
-}
-
-.btnarrow6::after {
+.btnarrow2::after{
   content: '';
   position: absolute;
-  top: 40%;
-  right: 12px;
-  border: 4px solid transparent;
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-  border-left-color: #fff;
-  transition: all .2s linear;
+  top:42%;
+  right: 13px;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
 }
 
-.btnarrow6:hover::before{
-	background:#333;
-	right:25px;
+.btnarrow2:hover::after{
+  animation: arrow .5s;
 }
 
-.btnarrow6:hover::after{
-  border-left-color: #333; 
-  right: 20px;
+@keyframes arrow {
+  50% {
+    right: 10px;
+  }
+  100% {
+    right: 13px;
+  }
+}
+
+/*---------- 表 ---------- */
+.c-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: solid 3px #00a7ea;
+}
+
+.c-table th {
+  padding: 8px 8px;
+  border: solid 1.5px #00a7ea;
+  background-color: #5ec3eb;
+}
+
+.c-table td {
+  padding: 8px 8px;
+  border: dashed 1.5px #00a7ea;
+  background-color: #fff;
+}
+
+/*---------- ロード ---------- */
+#splash {
+  position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background:#fff;
+	text-align:center;
+	color:#fff;
+}
+
+#splash_logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#splash_logo img {
+	width: 100%;
+	height: auto;
+}
+
+.fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*---------- セクション ---------- */
-.sec03 {
+.sec02 {
   margin: 0 0 0 0;
 	height: auto;
-	background-color: #dcdcdc;
+	background-color: #ccc;
+}
+
+.sec04 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #ccc;
 }
 
 .sec05 {
-  margin: 0 0 0 0;
-	height: auto;
-	background-color: #dcdcdc;
-}
-
-.sec07 {
   margin: 0 0 0 0;
 	height: auto;
 	background-color: #2857b1;
@@ -320,7 +330,7 @@ ul.ddmenu ul ul {
 
 .b_div {
   display: inline-block;
-  width: 90%;
+  width: 98%;
   padding:0vw;
   margin: 0vw 0vw 0vw 0vw;
 }
@@ -333,9 +343,10 @@ ul.ddmenu ul ul {
 
 .c_div {
   display: inline-block;
-  width: 50%;
+  width: 30%;
   padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
+  margin: 0vw 0vw 0vw 0vw;
+  background-color: #00a7ea;
 }
 
 .c_div img {
@@ -346,9 +357,10 @@ ul.ddmenu ul ul {
 
 .d_div {
   display: inline-block;
-  width: 40%;
+  width: 30%;
   padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
+  margin: 0vw 0vw 0vw 0vw;
+  background-color: #036eb7;
 }
 
 .d_div img {
@@ -359,12 +371,38 @@ ul.ddmenu ul ul {
 
 .e_div {
   display: inline-block;
-  width: 70%;
+  width: 40%;
   padding:0vw;
   margin: 0vw 1vw 0vw 1vw;
 }
 
 .e_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.f_div {
+  display: inline-block;
+  width: 70%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.f_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.g_div {
+  display: inline-block;
+  width: 50%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.g_div img {
   display: inline-block;
 	width: 100%;
 	height: auto;
