@@ -1,165 +1,70 @@
-@charset "UTF-8";
-
-/*---------- 文字 ---------- */
-body {
+body{
+  margin:0;
+  padding:0;
   font-family: 'M PLUS 1p', 'Montserrat', sans-serif;
-  margin: 0 0 0 0;
-  padding: 0;
+  width:100vw;
+  background-color:#fff;
 }
 
+/*----font----*/
 h1 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 6vw;
+  margin:0;
+  font-size: 8vw;
   text-align: center;
   font-weight: 800;
-  color: #036eb7;
 }
 
 h2 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 5.5vw;
+  margin:0;
+  font-size: 6vw;
   text-align: left;
   font-weight: 800;
-  color: #036eb7;
 }
 
 h3 {
-  margin: 0 0 0 0;
-  position: relative;
+  margin:0;
   font-size: 4vw;
   text-align: center;
   font-weight: 800;
-  color: #036eb7;
 }
 
-bla {
-  color: #000;
+h5{
+  margin:0;
+  padding-left:8vw;
+  font-size:2.5vw;
+  font-weight:800;
 }
 
-blu {
-  color: #00f;
-}
-
-red {
-  color: #f00;
-}
-
-ul {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2vw;
-  font-weight: 500;
-  color: #000;
-}
-
-ol {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2vw;
-  font-weight: 500;
-  color: #000;
-}
-
-th {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2vw;
-  text-align: center;
-  font-weight: 800;
-  color: #000;
-}
-
-td {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2vw;
-  text-align: center;
-  font-weight: 500;
-  color: #000;
-}
-
-a {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 1.7vw;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-}
-
-txt1 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2vw;
-  font-weight: 500;
-  color: #000;
-}
-
-tit1 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2.3vw;
-  font-weight: 800;
-  color: #fff;
-}
-
-tit1:hover{
-  opacity: 0.5;
-}
-
-tit2 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 1.7vw;
-  font-weight: 800;
-  color: #fff;
-}
-
-tit2:hover{
-  opacity: 0.5;
-}
-
-tit3 {
-  margin: 0 0 0 0;
-  position: relative;
+h6{
+  margin:0;
   font-size: 1.5vw;
   font-weight: 800;
   color: #fff;
 }
 
-tit4 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 3.5vw;
-  font-weight: 800;
-  color: #00a7ea;
+txt1{
+  overflow:auto;
+  margin:0;
+  padding:0;
+  font-size: 3vw;
+  font-weight:600;
 }
 
-tit5 {
-  margin: 0 0 0 0;
-  position: relative;
-  font-size: 2.5vw;
-  font-weight: 800;
-  color: #000;
+txt2{
+  margin:0;
+  padding:0;
+  font-size:2vw;
+  font-weight:600;
 }
 
-/*---------- ボタン ---------- */
-.btn06{
-  position: relative;
-  text-decoration: none;
-	display: inline-block;
-	background:#00a7ea;
-	color:#fff;
-  padding: 10px 40px 10px 30px;
-	border-radius:25px;
-  text-align: center;
-  outline: none;
-  transition: ease .2s;
-  font-size: 2.3vw;
-  font-weight: 600;
-  color: #fff;
+ul {
+  margin:0;
+  padding:0;
+  font-size: 3vw;
+}
+/*----color----*/
+sky-blu{
+  color: #036eb7;
 }
 
 .btnarrow2::after{
@@ -187,87 +92,70 @@ tit5 {
   }
 }
 
-/*---------- 表 ---------- */
-.c-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: solid 3px #00a7ea;
-}
-
-.c-table th {
-  padding: 8px 8px;
-  border: solid 1.5px #00a7ea;
-  background-color: #5ec3eb;
-}
-
-.c-table td {
-  padding: 8px 8px;
-  border: dashed 1.5px #00a7ea;
-  background-color: #fff;
-}
-
-/*---------- ロード ---------- */
-#splash {
-  position: fixed;
-	width: 100%;
-	height: 100%;
-	z-index: 999;
-	background:#fff;
-	text-align:center;
+@media screen and (max-width: 767px) {
+.btn{
+  position: relative;
+  text-decoration: none;
+	display: inline-block;
+	background:#04b8a6;
 	color:#fff;
+  padding: 5px 20px 5px 15px;
+	border-radius:12px;
+  text-align: center;
+  outline: none;
+  transition: ease .2s;
+  font-size: 2.3vw;
+  font-weight:300;
+  color: #fff;
 }
 
-#splash_logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.btnarrow2::after{
+  content: '';
+  position: absolute;
+  top:42%;
+  right: 6px;
+  width: 2px;
+  height: 2px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
 }
 
-#splash_logo img {
-	width: 100%;
-	height: auto;
+.btnarrow2:hover::after{
+  animation: arrow .5s;
 }
 
-.fadeUp{
-  animation-name: fadeUpAnime;
-  animation-duration:0.5s;
-  animation-fill-mode:forwards;
-  opacity: 0;
-}
-
-@keyframes fadeUpAnime{
-  from {
-    opacity: 0;
-    transform: translateY(100px);
+@keyframes arrow {
+  50% {
+    right: 5px;
   }
-  
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  100% {
+    right: 6px;
   }
 }
-
-/*---------- セクション ---------- */
-.sec02 {
-  margin: 0 0 0 0;
-	height: auto;
-	background-color: #ccc;
+}
+/*---flex---*/
+.flex{
+  display:flex;
 }
 
-.sec04 {
-  margin: 0 0 0 0;
-	height: auto;
-	background-color: #ccc;
+.block{
+  height:auto;
+  width:5vw;
 }
 
-.sec05 {
+.inline-block{
+  display:inline-block;
+}
+/*---link---*/
+a {
   margin: 0 0 0 0;
-	height: auto;
-	background-color: #2857b1;
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
 }
 
-/*---------- フッター リンク ---------- */
 .op a:hover{
 	color: #fff;
 	opacity: 0.5;
@@ -308,102 +196,253 @@ tit5 {
   background-size: contain;
   margin-right: 1vw;
 }
-
-/*---------- 画面分割 ---------- */
-.flex_div {
-  display: flex;
-  justify-content: center;
+/*----header----*/
+header{
+  
 }
 
-.a_div {
-  display: inline-block;
-  width: 5%;
-  padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
+.logo{
+  position:absolute;
+  z-index:10;
 }
 
-.a_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+/*
+ハンバーガ―メニュー
+*/
+@media screen and (min-width: 767px) {
+.hamburger {
+  width: 100px;
+  height: 100px;
+  background-color:#2857b1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius:25%;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+/* ハンバーガーメニューの線の設定（メニューが閉じている時） */
+.hamburger span {
+  width: 50px;
+  height: 2px ;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  transition: 0.3s ease-in-out;
+}
+/* 1本目の線の位置を設定 */
+.hamburger span:nth-child(1) {
+  top: 36px;
+}
+/* 2本目の線の位置を設定 */
+.hamburger span:nth-child(2) {
+  top: 50px;
+}
+/* 3本目の線の位置を設定 */
+.hamburger span:nth-child(3) {
+  top: 64px;
+}
+/*
+ハンバーガーメニューの線の設定（メニューが開いている時）
+1本目の線を-45度回転
+*/
+.hamburger.active span:nth-child(1) {
+  top: 47px;
+  left: 25px;
+  background :#fff;
+  transform: rotate(-45deg);
+}
+/* 2本目と3本目は重ねて45度回転 */
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 47px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+/*
+メニューの設定
+最初は閉じている状態なので、「opacity: 0;」「visibility: hidden;」
+で要素を非表示にしておく
+*/
+#navi {
+  width: 100vw;
+  height: 100vh;
+  background-color:#2857b1;
+  color: #fff;
+  position:fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 20;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  visibility: hidden;
+}
+/*
+ハンバーガーメニューがクリックされた際に、jQueryで#naviにactiveクラスを追加して、
+メニューを表示させる。
+*/
+#navi.active {
+  opacity: 1;
+  visibility: visible;
 }
 
-.b_div {
-  display: inline-block;
-  width: 98%;
-  padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
+#navi .menu {
+  margin: 8vw 0 4vw 0;
+}
+#navi .menu li {
+  margin-bottom: 1vw;
+}
+#navi .menu a {
+  color: #fff;
+  font-weight: bold;
+  font-size:3vw
+}
+}
+@media screen and (max-width: 767px) {
+  .hamburger {
+  width: 50px;
+  height: 50px;
+  background-color:#2857b1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius:25%;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+  
+/* ハンバーガーメニューの線の設定（メニューが閉じている時） */
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
 
-.b_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 66vw;
+    overflow: hidden;
+  }
+   
+  
+@keyframes slideshow {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  28%{
+    opacity: 1
+  }
+  38%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+   
+  .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation :slideshow 12s linear infinite;
+  }
+   
+  .item:nth-child(2){
+    animation-delay: 4s;
+  }
+   
+  .item:last-child{
+    animation-delay: 8s;
+  }
+
+
+
+.sec2{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+  background-color:#fff;
 }
 
-.c_div {
-  display: inline-block;
-  width: 30%;
-  padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
-  background-color: #00a7ea;
+.sec2-a{
+  text-align:center;
 }
 
-.c_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+.sec2-left{
+  height:auto;
+  width:70vw;
 }
 
-.d_div {
-  display: inline-block;
-  width: 30%;
-  padding:0vw;
-  margin: 0vw 0vw 0vw 0vw;
-  background-color: #036eb7;
+.sec2-right{
+  height:auto;
+  width:35vw;
 }
 
-.d_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+.sec3{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+  background-color:#ccc;
 }
 
-.e_div {
-  display: inline-block;
-  width: 40%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
+.sec4{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+  background-color:#fff;
 }
 
-.e_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+.sec4-left{
+  padding:0 5vw 5vw 0;
+  height:auto;
+  width:45vw;
 }
 
-.f_div {
-  display: inline-block;
-  width: 70%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
+.sec4-right{
+  padding:0 0 5vw 5vw;
+  height:auto;
+  width:45vw;
 }
 
-.f_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+.sec5{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+  background-color:#ccc;
 }
-
-.g_div {
-  display: inline-block;
-  width: 50%;
-  padding:0vw;
-  margin: 0vw 1vw 0vw 1vw;
-}
-
-.g_div img {
-  display: inline-block;
-	width: 100%;
-	height: auto;
+	
+footer{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+  background-color:#2857b1;
 }
