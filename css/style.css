@@ -46,7 +46,7 @@ txt1{
   overflow:auto;
   margin:0;
   padding:0;
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight:600;
 }
 
@@ -60,7 +60,13 @@ txt2{
 ul {
   margin:0;
   padding:0;
-  font-size: 3vw;
+  font-size: 2vw;
+}
+
+li a{
+  color:#036eb7;
+  font-size:2vw;
+  font-weight:800;
 }
 /*----color----*/
 sky-blu{
@@ -90,7 +96,7 @@ whi{
 	background:#04b8a6;
 	color:#fff;
   padding: 10px 40px 10px 30px;
-	border-radius:25px;
+  border-radius:25px;
   text-align: center;
   outline: none;
   transition: ease .2s;
@@ -98,7 +104,6 @@ whi{
   font-weight: 600;
   color: #fff;
 }
-
 
 .btnarrow2::after{
   content: '';
@@ -133,7 +138,7 @@ whi{
 	background:#04b8a6;
 	color:#fff;
   padding: 5px 20px 5px 15px;
-	border-radius:12px;
+  border-radius:12px;
   text-align: center;
   outline: none;
   transition: ease .2s;
@@ -206,7 +211,6 @@ a {
   margin-right: 1vw;
 }
 
-
 .tcu a::before{
   content: '';
   display: inline-block;
@@ -254,7 +258,6 @@ header{
   z-index: 30;
   cursor: pointer;
   transition: 0.3s;
-  border-radius:25%;
 }
 .hamburger:hover {
   opacity: 0.7;
@@ -349,7 +352,6 @@ header{
   z-index: 30;
   cursor: pointer;
   transition: 0.3s;
-  border-radius:25%;
 }
 .hamburger:hover {
   opacity: 0.7;
@@ -507,7 +509,7 @@ main{
    
   .item {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -523,6 +525,8 @@ main{
   .item:last-child{
     animation-delay: 8s;
   }
+
+
 
 .sec2{
   margin:0;
