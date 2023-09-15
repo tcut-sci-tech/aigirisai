@@ -108,6 +108,421 @@ whi{
   font-weight: 600;
   color: #fff;
 }
+.btnarrow2::after{
+  content: '';
+  position: absolute;
+  top:42%;
+  right: 13px;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+.btnarrow2:hover::after{
+  animation: arrow .5s;
+}
+
+@keyframes arrow {
+  50% {
+    right: 10px;
+  }
+  100% {
+    right: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+.btn{
+  position: relative;
+  text-decoration: none;
+	display: inline-block;
+	background:#04b8a6;
+	color:#fff;
+  padding: 5px 20px 5px 15px;
+  border-radius:12px;
+  text-align: center;
+  outline: none;
+  transition: ease .2s;
+  font-size: 2.3vw;
+  font-weight:300;
+  color: #fff;
+}
+
+.btnarrow2::after{
+  content: '';
+  position: absolute;
+  top:42%;
+  right: 6px;
+  width: 2px;
+  height: 2px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.btnarrow2:hover::after{
+  animation: arrow .5s;
+}
+
+@keyframes arrow {
+  50% {
+    right: 5px;
+  }
+  100% {
+    right: 6px;
+  }
+}
+}
+
+/*---flex---*/
+.flex{
+  display:flex;
+}
+
+.block{
+  height:auto;
+  width:5vw;
+}
+
+.inline-block{
+  display:inline-block;
+}
+/*---link---*/
+a {
+  margin: 0 0 0 0;
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.op a:hover{
+	color: #fff;
+	opacity: 0.5;
+}
+
+.twitter a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20twitter.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+.tcu a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20tcu.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+.sci a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20sci.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+/*----header----*/
+header{
+  
+}
+
+.logo{
+  position:absolute;
+  z-index:10;
+}
+
+/*
+ハンバーガ―メニュー
+*/
+@media screen and (min-width: 767px) {
+.hamburger {
+  width: 100px;
+  height: 100px;
+  background-color:#2857b1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+/* ハンバーガーメニューの線の設定（メニューが閉じている時） */
+.hamburger span {
+  width: 50px;
+  height: 2px ;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  transition: 0.3s ease-in-out;
+}
+/* 1本目の線の位置を設定 */
+.hamburger span:nth-child(1) {
+  top: 36px;
+}
+/* 2本目の線の位置を設定 */
+.hamburger span:nth-child(2) {
+  top: 50px;
+}
+/* 3本目の線の位置を設定 */
+.hamburger span:nth-child(3) {
+  top: 64px;
+}
+/*
+ハンバーガーメニューの線の設定（メニューが開いている時）
+1本目の線を-45度回転
+*/
+.hamburger.active span:nth-child(1) {
+  top: 47px;
+  left: 25px;
+  background :#fff;
+  transform: rotate(-45deg);
+}
+/* 2本目と3本目は重ねて45度回転 */
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 47px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+/*
+メニューの設定
+最初は閉じている状態なので、「opacity: 0;」「visibility: hidden;」
+で要素を非表示にしておく
+*/
+#navi {
+  width: 100vw;
+  height: 100vh;
+  background-color:#2857b1;
+  color: #fff;
+  position:fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 20;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  visibility: hidden;
+}
+/*
+ハンバーガーメニューがクリックされた際に、jQueryで#naviにactiveクラスを追加して、
+メニューを表示させる。
+*/
+#navi.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#navi .menu {
+  margin: 8vw 0 4vw 0;
+}
+#navi .menu li {
+  margin-bottom: 1vw;
+}
+#navi .menu a {
+  color: #fff;
+  font-weight: bold;
+  font-size:3vw
+}
+}
+@media screen and (max-width: 767px) {
+  .hamburger {
+  width: 50px;
+  height: 50px;
+  background-color:#2857b1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+  
+/* ハンバーガーメニューの線の設定（メニューが閉じている時） */
+.hamburger span {
+  width: 25px;
+  height: 1px ;
+  background: #fff;
+  position: absolute;
+  left: 12px;
+  transition: 0.3s ease-in-out;
+}
+  
+/* 1本目の線の位置を設定 */
+.hamburger span:nth-child(1) {
+  top: 18px;
+}
+/* 2本目の線の位置を設定 */
+.hamburger span:nth-child(2) {
+  top: 25px;
+}
+/* 3本目の線の位置を設定 */
+.hamburger span:nth-child(3) {
+  top: 32px;
+}
+/*
+ハンバーガーメニューの線の設定（メニューが開いている時）
+1本目の線を-45度回転
+*/
+.hamburger.active span:nth-child(1) {
+  top: 23px;
+  left: 12px;
+  background :#fff;
+  transform: rotate(-45deg);
+}
+  
+/* 2本目と3本目は重ねて45度回転 */
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 23px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+/*
+メニューの設定
+最初は閉じている状態なので、「opacity: 0;」「visibility: hidden;」
+で要素を非表示にしておく
+*/
+#navi {
+  width: 100%;
+  height: 100vh;
+  background-color:#2857b1;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 20;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  visibility: hidden;
+}
+  
+/*
+ハンバーガーメニューがクリックされた際に、jQueryで#naviにactiveクラスを追加して、
+メニューを表示させる。
+*/
+#navi.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#navi .menu {
+  margin: 8vw 0 4vw 0;
+}
+#navi .menu li {
+  margin-bottom: 1vw;
+}
+#navi .menu a {
+  color: #fff;
+  font-weight: bold;
+  font-size:3vw
+}
+}
+
+/*--main---*/
+main{
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+}
+
+.sec1{
+  margin:0;
+  padding:0;
+  height:cover;
+  width:100vw;
+  background-color:#fff;
+}
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width:100vw;
+  height:100vw;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 66vw;
+    overflow: hidden;
+  }
+   
+  
+@keyframes slideshow {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  28%{
+    opacity: 1
+  }
+  38%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+   
+  .item {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation :slideshow 12s linear infinite;
+  }
   .item:nth-child(2){
     animation-delay: 4s;
   }
