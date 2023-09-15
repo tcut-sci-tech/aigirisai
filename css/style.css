@@ -1,4 +1,113 @@
-   
+   body{
+  margin:0;
+  padding:0;
+  font-family: 'M PLUS 1p', 'Montserrat', sans-serif;
+  width:100vw;
+  background-color:#fff;
+}
+
+/*----font----*/
+h1 {
+  margin:0;
+  font-size: 8vw;
+  text-align: center;
+  font-weight: 800;
+}
+
+h2 {
+  margin:0;
+  font-size: 6vw;
+  text-align: left;
+  font-weight: 800;
+}
+
+h3 {
+  margin:0;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 800;
+}
+
+h5{
+  margin:0;
+  padding-left:8vw;
+  font-size:2.5vw;
+  font-weight:800;
+}
+
+h6{
+  margin:0;
+  font-size: 1.5vw;
+  font-weight: 800;
+  color: #fff;
+}
+
+txt1{
+  overflow:auto;
+  margin:0;
+  padding:0;
+  font-size: 2vw;
+  font-weight:600;
+}
+
+txt2{
+  margin:0;
+  padding:0;
+  font-size:2vw;
+  font-weight:600;
+}
+
+ul {
+  margin:0;
+  padding:0;
+  font-size: 2vw;
+}
+
+li a{
+  color:#036eb7;
+  font-size:2vw;
+  font-weight:800;
+}
+/*----color----*/
+sky-blu{
+  color: #036eb7;
+}
+
+.toku{
+  font-size:5vw;
+}
+
+grn{
+  color:#04b8a6;
+}
+
+red{
+  color:#f00;
+}
+
+blu{
+  color:#00f;
+}
+
+whi{
+  color:#fff;
+}
+/*---buttom---*/
+.btn{
+  position: relative;
+  text-decoration: none;
+	display: inline-block;
+	background:#04b8a6;
+	color:#fff;
+  padding: 10px 40px 10px 30px;
+  border-radius:25px;
+  text-align: center;
+  outline: none;
+  transition: ease .2s;
+  font-size: 2.3vw;
+  font-weight: 600;
+  color: #fff;
+}
   .item:nth-child(2){
     animation-delay: 4s;
   }
