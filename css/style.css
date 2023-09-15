@@ -253,8 +253,8 @@ a {
 */
 @media screen and (min-width: 767px) {
 .hamburger {
-  width: 8vw;
-  height: 8vw;
+  width: 200px;
+  height: 200px;
   background-color:#2857b1;
   position: fixed;
   top: 0;
