@@ -35,7 +35,7 @@ $(function(){
   ハンバーガ―メニュー
   ===================================================*/
   // ハンバーガーメニューをクリックした時
-  $('.hamburger').on('click', function() {
+  $(document).on('click','.hamburger', function() {
     // ハンバーガーメニューの共通処理を呼び出す
     hamburger();
   });
