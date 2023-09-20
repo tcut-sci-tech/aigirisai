@@ -1,3 +1,4 @@
+
 $(function(){
   /*=================================================
   ハンバーガ―メニュー
@@ -49,7 +50,7 @@ function hamburger() {
   // 存在しない場合を追加する処理を自動で行ってくれる
   $('.hamburger').toggleClass('active');
 
-  if ($('.hamburger').hasClass('.hamburger','active')) {
+  if ($('.hamburger').hasClass('active')) {
     // hamburgerクラスにactiveクラスが存在する場合は、naviにもactiveクラスを追加する
     $('#navi').addClass('active');
   } else {
