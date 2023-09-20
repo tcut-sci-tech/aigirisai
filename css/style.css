@@ -253,8 +253,8 @@ a {
 */
 @media screen and (min-width: 767px) {
 .hamburger {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color:#2857b1;
   position: fixed;
   top: 0;
@@ -268,39 +268,39 @@ a {
 }
 /* ハンバーガーメニューの線の設定（メニューが閉じている時） */
 .hamburger span {
-  width: 50px;
-  height: 2px ;
+  width: 75px;
+  height: 3px ;
   background: #fff;
   position: absolute;
-  left: 25px;
+  left: 37px;
   transition: 0.3s ease-in-out;
 }
 /* 1本目の線の位置を設定 */
 .hamburger span:nth-child(1) {
-  top: 36px;
+  top: 54px;
 }
 /* 2本目の線の位置を設定 */
 .hamburger span:nth-child(2) {
-  top: 50px;
+  top: 75px;
 }
 /* 3本目の線の位置を設定 */
 .hamburger span:nth-child(3) {
-  top: 64px;
+  top: 96px;
 }
 /*
 ハンバーガーメニューの線の設定（メニューが開いている時）
 1本目の線を-45度回転
 */
 .hamburger.active span:nth-child(1) {
-  top: 47px;
-  left: 25px;
+  top: 70px;
+  left: 37px;
   background :#fff;
   transform: rotate(-45deg);
 }
 /* 2本目と3本目は重ねて45度回転 */
 .hamburger.active span:nth-child(2),
 .hamburger.active span:nth-child(3) {
-  top: 47px;
+  top: 70px;
   background: #fff;
   transform: rotate(45deg);
 }
