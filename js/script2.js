@@ -45,7 +45,7 @@ $(function(){
 ===================================================*/
 // ハンバーガーメニューをクリックした時とメニュー内のリンクをクリックした時の
 // 処理が同じなので処理を共通化する
-function hamburger() {
+$(function hamburger() {
   // toggleClassを使用することで、hamburgerクラスにactiveクラスが存在する場合は削除、
   // 存在しない場合を追加する処理を自動で行ってくれる
   $('.hamburger').toggleClass('active');
